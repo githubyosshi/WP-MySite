@@ -46,8 +46,8 @@
         ?>
 
         <div class="navigation">
-          <div class="prev">prev</div>
-          <div class="next">next</div>
+          <div class="prev"><?php previous_posts_link(); ?></div>
+          <div class="next"><?php next_posts_link(); ?></div>
         </div>
       </div><!-- /posts -->
 
