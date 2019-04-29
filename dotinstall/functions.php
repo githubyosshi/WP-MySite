@@ -10,3 +10,6 @@ register_sidebar(
     'after_title' => '</h3>',
   )
 );
+
+add_theme_support('post-thumbnails');
+
