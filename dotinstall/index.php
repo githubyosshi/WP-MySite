@@ -1,13 +1,20 @@
 <?php get_header(); ?>
     <div id="main" class="container">
       <div id="posts">
+
+        <?php
+        if (have_posts()) :
+          while (have_posts()) :
+            the_post();
+        ?>
+
         <div class="post">
           <div class="post-header">
             <h2>
-              <a href="">タイトル</a>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </h2>
             <div class="post-meta">
-              2013年4月3日 【カテゴリ】
+              <?php echo get_the_date(); ?> 【<?php the_category(', '); ?>】
             </div>
           </div>
           <div class="post-content">
@@ -15,10 +22,22 @@
               <img src="img/noimage.png" width="100" height="100">
             </div>
             <div class="post-body">
-              <p>本文。本文。本文。本文。本文。本文。本文。本文。本文。本文。本文。本文。本文。本文。本文。</p>
+              <?php the_excerpt(); ?>
             </div>
           </div>
         </div><!-- /post -->
+
+        <?php
+          endwhile;
+        else:
+        ?>
+
+        <p>記事はありません！</p>
+
+        <?php
+        endif;
+        ?>
+        
         <div class="navigation">
           <div class="prev">prev</div>
           <div class="next">next</div>
