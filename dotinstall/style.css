@@ -106,7 +106,8 @@ p {
 /* navigation */
 
 .navigation {
-  overflow: 10px 0;
+  overflow: hidden;
+  padding: 10px 0;
   font-size: 12px;
   margin-bottom: 15px;
 }
@@ -134,6 +135,7 @@ p {
   }
     .widget h3 {
       font-weight: bold;
+      padding-bottom: 7px;
     }
 
     .widget li {

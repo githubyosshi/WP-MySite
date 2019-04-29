@@ -7,7 +7,7 @@
               <a href="">タイトル</a>
             </h2>
             <div class="post-meta">
-              2013年4月3日【カテゴリ】
+              2013年4月3日 【カテゴリ】
             </div>
           </div>
           <div class="post-content">
