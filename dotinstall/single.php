@@ -19,15 +19,15 @@
           </div>
           <div class="post-content">
 
-            <div class="post-body">
-              <?php the_excerpt(); ?>
+
+              <?php the_content(); ?>
             </div>
           </div>
         </div><!-- /post -->
 
         <div class="navigation">
-          <div class="prev"><?php previous_posts_link(); ?></div>
-          <div class="next"><?php next_posts_link(); ?></div>
+          <div class="prev"><?php previous_post_link(); ?></div>
+          <div class="next"><?php next_post_link(); ?></div>
         </div>
 
         <?php
